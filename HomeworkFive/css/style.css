@@ -1,0 +1,104 @@
+/*
+    Name: Anthony Klimas 
+    School Email: Anthony_Klimas@student.uml.edu
+    Description: Scrabble Game Homework 5
+*/
+#header {
+    padding-left: 385px;
+    text-align: left;
+}
+
+.boardSlot {
+    width: 90px;
+    height: 90px;
+}
+
+.letterTile {
+    width: 80px;
+    height: 80px;
+    padding-top: 57px;
+    padding-bottom: 57px;
+    margin-left: 10px;
+}
+
+#letterRack {
+    padding-left: 10px;
+}
+
+#rack {
+    border: 1px;
+    background-image: url("../img/rack.png");
+    background-repeat: no-repeat;
+    background-size: 680px 194px;
+    height: 194px;
+    width: 680px;
+    margin-right: 110px; 
+    margin-left: 110px;
+}
+
+
+#mainContent {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    height: 100vh;
+}
+
+#scoreLine {
+    display: flex;
+    margin-right: 135px;
+    margin-left: 135px;
+}
+
+.scoreLabel {
+    width: 150px;
+}
+
+.scoreCount {
+    width: 50px;
+}
+
+#boardRow {
+    display: inline-block;
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+#instructions {
+    text-align: center;
+}
+
+#ruleList {
+    list-style: none;
+    padding-left: 0;
+}
+
+#buttonsRow {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.headerItem {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+body {
+    background-image: url('scrabble.jpg');
+    background-size: cover; 
+    background-position: center center; 
+    margin: 0;
+}
+
+#playerResult {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.disabled {
+    color: lightslategrey;
+}

@@ -1,0 +1,80 @@
+<!--
+    Name: Anthony Klimas 
+    School Email: Anthony_Klimas@student.uml.edu
+    Description: Scrabble Game Homework 5
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homework 5</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/hw8.js"></script>
+</head>
+
+<body>
+    <div id="mainContent">
+        <div id="header">
+            <h1 class="headerItem">Scrabble</h1>
+        </div>
+        
+        <div id="playerResult"></div>
+
+        <!-- Current word, total score, Remaining number of tiles, highest total score.-->
+        <div id="scoreLine">
+            <div>
+                <div class="scoreLabel">Word:</div>
+                <div class="scoreCount" id="currentWord"></div>
+            </div>
+            <div>
+                <div class="scoreLabel">Current Score:</div>
+                <div class="scoreCount" id="currentScore"></div>
+            </div>
+            <div>
+                <div class="scoreLabel">Total Score:</div>
+                <div class="scoreCount" id="totalScore">0</div>
+            </div>
+            <div>
+                <div class="scoreLabel">Remaining Tiles:</div>
+                <div class="scoreCount" id="remainingTiles"></div>
+            </div>
+        </div>
+
+        <!--Board for the Player to drag and drop letters.-->
+        <div id="boardRow">
+            <hr />
+            <img class="boardSlot boardSlot-droppable" id="0" src="img/boardBlankTile.jpg">
+            <img class="boardSlot boardSlot-droppable" id="1" src="img/boardDoubleTile.jpg">
+            <img class="boardSlot boardSlot-droppable" id="2" src="img/boardBlankTile.jpg">
+            <img class="boardSlot boardSlot-droppable" id="3" src="img/boardBlankTile.jpg">
+            <img class="boardSlot boardSlot-droppable" id="4" src="img/boardBlankTile.jpg">
+            <img class="boardSlot boardSlot-droppable" id="5" src="img/boardDoubleTile.jpg">
+            <img class="boardSlot boardSlot-droppable" id="6" src="img/boardBlankTile.jpg">
+        </div>
+
+        <!--Buttons for the player to submit word and reset the game.-->
+        <div id="buttonsRow">
+            <button class="btn" id="submitWordButton" type="button" onclick="submitWord()">Submit Word</button>
+            <button class="btn" id="newGameButton" type="button" onclick="newGame()">New Game</button>
+        </div>
+
+        <br />
+
+        <!--Rack of 7 letters provided for the Player to make words.-->
+        <div class="rack-droppable" id="rack">
+            <ul id="letterRack">
+            </ul>
+        </div>
+
+        <div id="wordValidation" style="margin-top: -350px; font-size: 18px; color: #df0909;"></div>
+
+    </div>
+</body>
+
+</html>
